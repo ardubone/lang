@@ -1,8 +1,12 @@
 
 
-#План тестирования
-#сайт
-![alt text](/photo_2023-02-16_17-09-13.jpg "Logo Title Text 1")
+# План тестирования
+# сайт
+
+<picture>
+ <img alt="YOUR-ALT-TEXT" src="photo_2023-02-16_17-09-13.jpg">
+</picture>
+
 
 Основная информация
 
