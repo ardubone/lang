@@ -2,13 +2,18 @@
 
 # План тестирования
 # сайт
+<<<<<<< Updated upstream:markdown/NN/README.md
 
 <picture>
  <img alt="YOUR-ALT-TEXT" src="photo_2023-02-16_17-09-13.jpg">
 </picture>
 
+=======
+>>>>>>> Stashed changes:markdown/NN/test_plan.md
 
+![alt text](/photo_2023-02-16_17-09-13.jpg)
 
+## Основная информация
 
 | Продукт       | НаймиНайми           |   
 | ------------- |:-------------:| 
