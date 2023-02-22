@@ -24,15 +24,15 @@ class SeleniumBase:
                     'tag_name': By.TAG_NAME}
         return locating[find_by]
 
-    def is_visible(self, find_by: str, locator: str, locator_name: str = None) -> WebElement:
+    def is_visible(self, find_by: str, locator: str, locator_name: str = None) -> List[WebElement]:
         '''Waiting on element and return WebElement if it is visible'''
         return self.__wait.until(ec.visibility_of_element_located((self.__get_selenium_by(find_by), locator)), locator_name)
 
-    def is_present(self, find_by: str, locator: str, locator_name: str = None) -> WebElement:
+    def is_present(self, find_by: str, locator: str, locator_name: str = None) -> List[WebElement]:
         '''Waiting on element and return WebElement if it is present on DOM'''
         return self.__wait.until(ec.presence_of_element_located((self.__get_selenium_by(find_by), locator)), locator_name)
 
-    def is_not_present(self, find_by: str, locator: str, locator_name: str = None) -> WebElement:
+    def is_not_present(self, find_by: str, locator: str, locator_name: str = None) -> List[WebElement]:
         '''Wait on element until it disappears '''
         return self.__wait.until(ec.invisibility_of_element_located((self.__get_selenium_by(find_by), locator)), locator_name)
 
